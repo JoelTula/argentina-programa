@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCv</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#infoPer">Informacion personal</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#estudios">Estudios</a>
+                  <a class="nav-link" href="#experiencia">Experiencia</a>
+                  <a class="nav-link" href="#otros">Otros</a>
+                
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="name">
+            <div class="img"> 
+                <img src="./assets/fotoPerfil.jpg" >
+            </div>
+
+            <div class="contenido">
+                <p class="p1">Joel Jonatan Tula </p>
+                <button type="button" class="sobre-mi" id="buttonModal">Sobre mi</button>
+                <div id="myModal" class="modal-container">
+                    <div class="modal-content">
+                        <span class="close fw-bolder fs-3">x</span>
+                        <p class="fw-bolder fs-5">Soy una persona proactiva, enérgica, dinámica y muy comprometida con mi trabajo.<br>Me gusta el mundo de la programación y todo lo que me sume a aumentar mi conocimiento sobre tema siempre es bienvenido.<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="info" id="infoPer">
+            <h3 class="tituloSeccion">Informacion Personal</h3>
+            <ul>
+                <li class="titulo">Nombre y Apellido:</li>
+                <li class="respuesta">Joel Jonatan Tula</li> <br> <br>
+                <li class="titulo">Numero de telefono:</li>
+                <li class="respuesta">3813157706</li> <br> <br>
+                <li class="titulo">E-mail:</li>
+                <li class="respuesta">joel.j.tula@gmail.com</li> <br> <br>
+                <li class="titulo">Domicilio:</li>
+                <li class="respuesta">Chacabuco 435 Tafi Viejo - Tucuman</li> <br> <br>
+                <li class="titulo">Cod. Postal:</li>
+                <li class="respuesta">4103</li> <br> <br>
+        </ul>
+        </section>
+        <section class="info" id="estudios">
+            <h3 class="tituloSeccion">Estudios</h3>
+            <ul>
+                <li class="titulo">Terciario:</li>
+                <li class="respuesta">IES Tafi Viejo</li> <br> <br>
+                <li class="titulo">Año de ingreso:</li>
+                <li class="respuesta">2022 (por arrancar 2do año)</li> <br> <br>
+                <li class="titulo">Titulo:</li>
+                <li class="respuesta">Prpfesor de educacion secundaria en fisica</li> <br> <br>
+                <li class="titulo">Secundario:</li>
+                <li class="respuesta">Escuela tecnica prof. Rafael Marino</li> <br> <br>
+                <li class="titulo">Año de ingreso:</li>
+                <li class="respuesta">2007</li> <br> <br>
+                <li class="titulo">Año de egreso:</li>
+                <li class="respuesta">2014</li> <br> <br>
+                <li class="titulo">Titulo:</li>
+                <li class="respuesta">Tec. Electromecanico</li> <br> <br>
+            </ul>
+
+        </section>
+        <section class="info" id="experiencia">
+            <h3 class="tituloSeccion">Experiencia laboral</h3>
+            <ul>
+                <li class="titulo">Agente telefonico:</li>
+                <li class="respuesta">Desarrollo la tarea de agente telefonico brindando soporte tecnico para Personal Flow</li> <br> <br>
+                <li class="titulo">Año de ingreso:</li>
+                <li class="respuesta">2019</li> <br> <br>
+                <li class="titulo">Año de finalizacion:</li>
+                <li class="respuesta">Actualmente sigo en el puesto de trabajo</li> <br> <br>
+            </ul>
+            
+
+        </section>
+        <section class="info" id="otros">
+            <h3 class="tituloSeccion">Idiomas</h3>
+            <ul>
+                <li class="titulo">Ingles:</li>
+                <li class="respuesta">basico</li> <br> <br>
+            </ul>        
+        </section>
+    </main>
+    <footer>
+        <p id=caja class="footer">© Curriculum Vitae Joel Tula || Todos los derechos reservados</p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+<b</b>

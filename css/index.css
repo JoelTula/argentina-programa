@@ -1,0 +1,126 @@
+body {
+    margin:0;
+    padding: 0;
+    background: #e0f5fc;
+}
+.name {
+    width: 100%;
+    height: 200px;
+    background: #00171F;
+}
+.button-container {
+    display: flex;
+    justify-content: start;
+}
+.sobre-mi {
+    width: auto;
+    background-color: unset;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* margin-top: 30px; */
+}
+.name .contenido {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+}
+.name .contenido .p1{
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 65px;
+    margin-top: 10px;
+}
+.name .contenido .p2{
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.modal-container .modal-content {
+    background-color: white;
+    box-shadow: 0px 1px 54px 10px rgba(0, 0, 0, 0.815);
+    margin: auto;
+    padding: 25px;
+    border: 2px solid #450920;
+    border-radius: 20px;
+    width: 60%;
+}
+.name .img {
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    overflow: hidden;
+    
+}
+.name .img img {
+    width: 200px ;
+    height:320px;
+
+}
+.info {
+    width: 90%;
+    height: auto;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,7,100,1) 1%, rgba(9,100,121,0.5634628851540616) 13%, rgba(111,120,122,0.36738445378151263) 96%, rgba(189,192,217,0.9304096638655462) 99%);
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 54px 10px rgba(0, 0, 0, 0.815);
+}
+.info .tituloSeccion {
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #c0afafa1 solid;
+
+}
+.info .titulo {
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+.info .respuesta {
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size:large ;
+    display: inline;
+    
+}
+.pie {
+    color: #050505;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+    font-size:large ;
+    text-align: center;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+}
