@@ -18,3 +18,11 @@ if(document.getElementById('buttonModal')) {
         body.style.overflow = 'hidden';
     }
 }
+
+document.getElementById('buttonNoche').onclick = function() {
+    document.getElementById('body').style.background = '#03071e'
+}
+
+document.getElementById('buttonDia').onclick = function() {
+    document.getElementById('body').style.background = '#fff'
+}
