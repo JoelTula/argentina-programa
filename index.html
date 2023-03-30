@@ -12,47 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
-            <div class="container-fluid nav-style d-flex justify-content-evenly">
-                <a class="nav-link" href="#infoPer">Informacion personal</a>
-                <a class="nav-link" href="#estudios">Estudios</a>
-                <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
-                <a class="nav-link" href="#otros">Otros</a>
-            </div>
-        </nav>
+<body id="body">
+    <header id="inicio">
+        <section>
+            <nav class="nav-section position-fixed">
+                <div class="nav-style d-flex justify-content-center">
+                    <button type="button" class="button-noche" id="buttonNoche">Nocturno🌜</button>
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#infoPer">Informacion personal</a>
+                    <a class="nav-link" href="#estudios">Estudios</a>
+                    <a class="nav-link" href="#proyectos">Proyectos Realizados</a>
+                    <a class="nav-link" href="#otros">Otros</a>
+                    <button type="button" class="button-dia" id="buttonDia">Día🌞</button>
+                </div>
+            </nav>
+        </section>
     </header>
     <main>
-        <div class="name">
-            <div class="img"> 
-                <img src="./assets/fotoPerfil.jpg" >
-            </div>
-            <div class="contenido">
-                <p class="p1">Joel Jonatan Tula </p>
-                <button type="button" class="sobre-mi" id="buttonModal">Sobre mi</button>
-                <div id="myModal" class="modal-container">
-                    <div class="modal-content">
-                        <span class="close fw-bolder fs-3">x</span>
-                        <p class="fw-bolder fs-5">Soy una persona proactiva, enérgica, dinámica y muy comprometida con mi trabajo.<br>Me gusta el mundo de la programación y todo lo que me sume a aumentar mi conocimiento sobre tema siempre es bienvenido.<br></p>
+        <section>
+            <div class="name">
+                <div class="img rounded-circle">
+                    <img src="./assets/fotoPerfil.jpg" >
+                </div>
+                <div class="contenido">
+                    <p class="p1">Joel Jonatan Tula </p>
+                    <button type="button" class="sobre-mi" id="buttonModal">Sobre mi</button>
+                    <div id="myModal" class="modal-container">
+                        <div class="modal-content">
+                            <span class="close fw-bolder fs-3">x</span>
+                            <p class="fw-bolder fs-5">Soy una persona proactiva, enérgica, dinámica y muy comprometida con mi trabajo.<br>Me gusta el mundo de la programación y todo lo que me sume a aumentar mi conocimiento sobre tema siempre es bienvenido.<br></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="info" id="infoPer">
             <h3 class="tituloSeccion">Informacion Personal</h3>
             <ul>
                 <li class="titulo">Nombre y Apellido:</li>
                 <li class="respuesta">Joel Jonatan Tula</li> <br> <br>
-                <li class="titulo">Numero de telefono:</li>
-                <li class="respuesta">3813157706</li> <br> <br>
+                <li class="titulo">Enviar Mensaje:</li>
+                <li class="respuesta"><a class="respuesta msj" href="tel:3813157706">3813157706</a></li> <br> <br>
                 <li class="titulo">E-mail:</li>
-                <li class="respuesta">joel.j.tula@gmail.com</li> <br> <br>
+                <li class="respuesta"><a class="respuesta email" href="mailto:joel.j.tula@gmail.com">joel.j.tula@gmail.com</a></li> <br> <br>
                 <li class="titulo">Domicilio:</li>
-                <li class="respuesta">Chacabuco 435 Tafi Viejo - Tucuman</li> <br> <br>
+                <li class="respuesta"><a class="respuesta" href="https://goo.gl/maps/Z7Zutof1w7rncGgd9" target="_blank">Chacabuco 435 Tafi Viejo - Tucuman</a></li> <br> <br>
                 <li class="titulo">Cod. Postal:</li>
-                <li class="respuesta">4103</li> <br> <br>
-        </ul>
+                <li class="respuesta">T4103</li> <br> <br>
+            </ul>
         </section>
         <section class="info" id="estudios">
             <h3 class="tituloSeccion">Estudios</h3>
@@ -72,27 +79,46 @@
                 <li class="titulo">Titulo:</li>
                 <li class="respuesta">Tec. Electromecanico</li> <br> <br>
             </ul>
-
         </section>
-        <section class="info" id="experiencia">
-            <h3 class="tituloSeccion">Experiencia laboral</h3>
-            <ul>
-                <li class="titulo">Agente telefonico:</li>
-                <li class="respuesta">Desarrollo la tarea de agente telefonico brindando soporte tecnico para Personal Flow</li> <br> <br>
-                <li class="titulo">Año de ingreso:</li>
-                <li class="respuesta">2019</li> <br> <br>
-                <li class="titulo">Año de finalizacion:</li>
-                <li class="respuesta">Actualmente sigo en el puesto de trabajo</li> <br> <br>
-            </ul>
-            
-
+        <section class="info" id="proyectos">
+            <div>
+                <h3 class="tituloSeccion">Proyectos Realizados</h3>
+            </div>
+            <div class="cards-container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="card card-style">
+                        <img src="./assets/Aerolineas.jpeg" class="card-img-top" alt="Imagen de Aerolíneas Argentina">
+                        <div class="card-body">
+                            <p class="card-text fw-bold"">En este proyecto trabajé en la sección de creación de formularios para Registro.<br>Tecnologías utilizadas: HTML5, CSS y Javascript.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col "">
+                        <div class="card card-style">
+                        <img src="./assets/Bosh.jpeg" class="card-img-top" alt="Imagen de Bosh">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">En este proyecto trabajé en la sección de carga y control de stock de herramientas.<br> Tecnologías utilizadas: HTML5, CSS, Javascript, Reactjs, Node.js.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col px-0">
+                        <div class="card card-style">
+                        <img src="./assets/Honda.jpeg" class="card-img-top" alt="Imagen de Honda">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">En este proyecto trabajé en la sección de registros de nuevos usuarios en DB.<br>Tecnologías utilizadas: HTML5, CSS, Javascript y MERN.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="info" id="otros">
+        <section class="info info-otros" id="otros">
             <h3 class="tituloSeccion">Idiomas</h3>
             <ul>
                 <li class="titulo">Ingles:</li>
                 <li class="respuesta">basico</li> <br> <br>
-            </ul>        
+            </ul>
         </section>
     </main>
     <footer>
@@ -103,4 +129,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
-<b</b>
